@@ -1,0 +1,98 @@
+html {
+  font-size: 16px;
+}
+
+html,body {
+  padding-top: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft YaHei", sans-serif;
+  overflow-y: hidden;
+  writing-mode: vertical-rl;
+  color: #181a1b;
+  background-color: #f5f5f5;
+  -webkit-font-smoothing: antialiased;
+  max-height: 33em;
+  padding-bottom: 1em;
+}
+a {
+  text-decoration: none;
+  margin: 0 0.5em;
+}
+a:link, a:visited {
+  color: blue;
+}
+a:hover, a:active {
+  color: red;
+}
+h1 {
+  margin-left: 2em;
+}
+p + h3 {
+  margin-right: 2em;
+}
+p,ol,ul,div,blockquote { 
+  font-family: serif, sans-serif;
+  line-height: 1.5;
+  margin-left: 0.8em;
+}
+ul.posts li {
+  margin-left: 1.2em;
+}
+ol {
+  list-style: none;
+  counter-reset: cupcake;
+}
+ol li {
+  counter-increment: cupcake;
+}
+ol li:before {
+  content: counters(cupcake, '.') '.';
+  /* Whatever custom styles you want here */
+  position: absolute;
+  margin-top: -1.2em;
+  transform: rotate(270deg);
+}
+strong {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+blockquote {
+  margin-top: 0;
+  border: 1px solid black;
+  padding: 1em;
+}
+blockquote.chrome-warning {
+  display: none;
+}
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+  .selector:not(*:root), blockquote.chrome-warning {
+      display: block;
+  }
+}
+code {
+  font-family: monospace;
+  font-style: normal;
+  border: 1px solid black;
+}
+code, small {
+  margin: 0.5em 0.5em;
+  padding: 4px;
+  border-radius: 4px;
+}
+small {
+  font-family: serif, monospace;
+  font-size: 0.7em;
+  color: darkred;
+}
+small.em {
+  background-color: darkred;
+  color: white;
+}
+small.time {
+  color: black;
+  background-color: #ddd;
+  letter-spacing: 0.2em;
+}
+li {margin-left: 0.5em;}
+main.open {display:flex;align-items:flex-end;height:auto;min-height:7em;}
+a.horiz,span.horiz {margin: 0.1em 0.1em;}
+.horiz {writing-mode: horizontal-tb;}
