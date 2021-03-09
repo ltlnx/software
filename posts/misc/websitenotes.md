@@ -1,6 +1,6 @@
 # 網站製作筆記、資源
 
-### ＨＴＭＬ
+### HTML
 
 - 所有HTML標籤：[HTML Reference](https://www.w3schools.com/tags/default.asp) *(W3C)*
 - [ssg](https://www.romanzolotarev.com/ssg.html)
